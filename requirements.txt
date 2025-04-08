@@ -3,4 +3,3 @@ google-genai
 pydantic
 streamlit
 google-generativeai
-os
