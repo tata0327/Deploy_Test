@@ -1,13 +1,9 @@
-from dotenv import load_dotenv
 import streamlit as st
 import os
 from google import genai
 import google.generativeai as googlegemini
 
-# .env 파일 로드
-load_dotenv()
-
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 
 # Gemini 클라이언트 초기화
 googlegemini.configure(api_key=GEMINI_API_KEY)
